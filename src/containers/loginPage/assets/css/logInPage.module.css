@@ -1,0 +1,98 @@
+div.page_logIn{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(3, 38, 66, 0.986);
+    padding: 6em 4em 4em 4em;
+    position: relative;
+    z-index: 2;
+    
+    color: rgba(255, 255,255, 0.75);
+    font-family: "Roboto" sans-serif;
+    font-size: 12pt ;
+    font-weight: 400 ;
+    letter-spacing: -0.01em ;
+    line-height:  1.65em 
+}
+h1.page_logIn{
+    color:  #fff ;
+    font-weight: 700;
+    line-height:  1em ;
+    margin:  0 0 0.55em 0 ;
+    font-size:  3.25em;
+}
+p.page_logIn{
+    color: rgba(255, 255, 255, 0.5) ;
+    position: relative ;
+    margin: 0 0 1.5em 0;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+form.page_logIn{
+    margin: 0 0 2em 0 ;
+    display: flex;
+    position: relative;
+}
+
+input[type="email"].page_logIn,
+input[type="text"].page_logIn {
+	appearance: none;
+	transform: scale(1);
+	transition: border-color 0.2s ease, background-color 0.2s ease;
+    background-color: transparent;
+    margin: 15px;
+	border-radius: 6px;
+	border: none;
+	border: solid 2px rgba(255, 255, 255, 0.35);
+	color: inherit;
+	display: block;
+	outline: 0;
+	padding: 0 1em;
+	text-decoration: none;
+    width: 22em;
+    height: 2.75em;
+    font-size: 1em;
+}
+input[type="email"].page_logIn:invalid{
+    box-shadow: none;
+}
+input[type="email"].page_logIn:focus
+,input[type="text"].page_logIn:focus{
+	animation: focus 0.1s;
+	background-color: rgba(255, 255, 255, 0.125);
+	border-color: #1cb495;
+}
+
+button.page_logIn{
+    appearance: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    background-color: #1cb495;
+    border-radius: 6px;
+    border: 0;
+    color: #ffffff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1em;
+    height: 2.75em;
+    line-height: 2.75em;
+    padding: 0 1.125em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 1.5em;
+}
+button.page_logIn:hover{
+    background-color: #1fcaa7;
+}
+
+button.page_logIn:active{
+    background-color: #199e83;
+}
+button.page_logIn:disabled {
+    opacity: 0.5;
+}
+
